@@ -601,7 +601,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
   color: var(--first-color);
   cursor: pointer;
 }
-.service__modal-close{
+.service__modal-link{
   position: absolute;
   bottom: 0.5rem;
   padding-top: 1rem;
