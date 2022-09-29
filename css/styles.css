@@ -11,17 +11,23 @@
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
+
+
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
-    --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+
+
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color:  hsl(var(--hue-color),29%,16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+      --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -72,16 +78,16 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
 
-  --first-color-second: hsl(var(--hue-color), 30%, 8%);
 
 
-  --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
-  --container-color:  hsl(var(--hue-color),29%,16%);
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -118,7 +124,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  
+
 }
 
 h1, h2, h3, h4 {
@@ -146,7 +152,7 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-  
+
 }
 
 .section__subtitle {
@@ -157,7 +163,7 @@ img {
 
 .section__title{
   text-align: center;
-} 
+}
 .section__subtitle {
   text-align: center;
 }
@@ -295,7 +301,7 @@ color: var(--first-color);
 .home__blob{
   width: 200px;
   fill: var(--first-color);
-  
+
 }
 .home__blob-img{
   width: 170px;
@@ -345,7 +351,7 @@ color: var(--first-color);
 
 /*==================== BUTTONS ====================*/
 .button{
-  
+
   background-color: var(--first-color);
   color: #fff;
   padding: 1rem;
@@ -407,7 +413,7 @@ transition: .3s;
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-2-5);
-  
+
 }
 
 .skills__icon{
@@ -434,12 +440,12 @@ transition: .3s;
   font-weight: var(--font-medium);
 }
 .skills__bar{
-  
-  
+
+
   height: 5px;
   border-radius: .25rem;
   background-color: var(--first-color-lighter);
-  
+
 
 }
 
@@ -452,7 +458,7 @@ transition: .3s;
   border-radius: 0.25rem;
   transition: 1s;
   background-color: var(--first-color);
-  
+
 }
 
 
@@ -560,7 +566,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 0 36%;
+
   z-index: var(--z-modal);
   opacity: 0;
   visibility: hidden;
@@ -594,6 +601,16 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
   color: var(--first-color);
   cursor: pointer;
 }
+.service__modal-close{
+  position: absolute;
+  bottom: 0.5rem;
+  padding-top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
 .services__modal-icon{
   color: var(--first-color);
   margin-right: var(--mb-0-25);
@@ -860,7 +877,7 @@ color: var(--first-color-lighter);
   }
   .qualification__sections{
     display: grid;
-    
+
     justify-content: center;
   }
 }
@@ -879,11 +896,11 @@ color: var(--first-color-lighter);
     margin-bottom: 4rem;
   }
   .header{
-    
+
     top: 0;
-    
+
     bottom: initial;
-    
+
   }
   .header,
   .main,
@@ -913,7 +930,7 @@ color: var(--first-color-lighter);
   .home__container{
     row-gap: 5rem;
     column-gap: 2rem;
-    
+
   }
   .home__content{
     padding-top: 5.5rem;
@@ -946,8 +963,8 @@ color: var(--first-color-lighter);
   .qualification__tabs{
     justify-content: center;
   }
-  
-  
+
+
   .services__container{
     grid-template-columns: repeat(3,218px);
     justify-content: center;
@@ -962,7 +979,7 @@ color: var(--first-color-lighter);
     width: 450px;
   }
   .portfolio__img{
-    width: 320px; 
+    width: 320px;
   }
   .portfolio__content{
     align-items: center;
@@ -977,7 +994,7 @@ color: var(--first-color-lighter);
     flex-direction: row;
     column-gap: 2rem;
 
-    
+
   }
   .footer__social{
     justify-content: flex-end;
@@ -1031,4 +1048,3 @@ color: var(--first-color-lighter);
   grid-template-columns: repeat(2,1fr);
  }
 }
-
